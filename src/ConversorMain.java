@@ -87,7 +87,7 @@ public class ConversorMain {
 
         double tasaConversion = obtenerTasaConversion(response.body(), to);
         double resultadoConversion = valor * tasaConversion;
-        System.out.println("El valor " + valor + " (" + from + ") corresponde convertido a " + resultadoConversion + " (" + to + ")\n");
+        System.out.println("La cantidad de " + valor + " (" + from + ") equivale a " + resultadoConversion + " (" + to + ")");
     }
 
     private static double obtenerTasaConversion(String jsonResponse, String monedaDestino) {
